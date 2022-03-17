@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body background="fondo3.jpg">
+    <!-- Formularios -->
+    <h1>Formulario</h1>
+    <h2>Datos generales</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" ><br><br>
+        <label for="correo1">Correo:</label>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <label for="numero1">Numero Telefónico:</label>
+        <input type="number" id="numero1" name="numero1" maxlength="10"><br><br> 
+        <label for="numero1">Descripcion General:</label>
+        <input type="text" id="descrip" name="descrip"><br><br>
+
+    <h2>Elige el sabor de tu pastel</h2>
+    <label for="sabor">Sabor del pastel</label>
+    <select id="sabor" name="sabor">
+        <option value="Chocolate">Chocolate</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Fresa">Fresa</option>
+        <option value="Durazno">Durazno</option>
+        <option value="Capuccino">Capuccino</option>
+        <option value="Queso">Queso</option>
+    </select>
+
+    <h3>Añade un sabor diferente si asi lo deseas por solo 50 pesos extra</h3><br>
+    <input type="radio" id="choco" name="sabores" value="Chocolate">
+    <label for="choco">Añadir sabor Chocolate</label><br><br>
+    <input type="radio" id="vaini" name="sabores" value="Vainilla">
+    <label for="vaini">Añadir sabor Vainilla</label><br><br>
+    <input type="radio" id="fresa" name="sabores" value="Fresa">
+    <label for="fresa">Añadir sabor Fresa</label><br><br>
+    <input type="radio" id="duraz" name="sabores" value="Durazno">
+    <label for="duraz">Añadir sabor Durazno</label><br><br>
+    <input type="radio" id="capu" name="sabores" value="Capuccino">
+    <label for="capu">Añadir sabor Capuccino</label><br><br>
+    <input type="radio" id="queso" name="sabores" value="Queso">
+    <label for="queso">Añadir sabor Queso</label><br><br>
+
+    <h3>Elige las velas que quieres en tu pastel</h3>
+
+    <p>Podrás elegir todas las velas que quieras:</p>
+    <input type="checkbox" id="num" name="num" value="numero">
+    <label for="topping1">Añadir vela de numeros</label><br><br>
+    <input type="checkbox" id="simp" name="simp" value="simples">
+    <label for="topping2">Añadir velas simples</label><br><br>
+    <input type="checkbox" id="infant" name="infant" value="infantiles">
+    <label for="topping3">Añadir velas infantiles</label><br><br>
+    <input type="checkbox" id="animal" name="animal" value="animales">
+    <label for="topping3">Añadir velas de animales</label><br><br>
+    <input type="checkbox" id="magic" name="magic" value="magicas">
+    <label for="topping3">Añadir velas magicas</label><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+    
+</body>
